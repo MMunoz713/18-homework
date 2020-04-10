@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+
 let transactions = [];
 let myChart;
 

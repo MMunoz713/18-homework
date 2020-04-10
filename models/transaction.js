@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
-
+//Build schema for the DB
 const Schema = mongoose.Schema;
-
+//Pushes transactionSchema into the DB
 const transactionSchema = new Schema(
   {
     name: {
@@ -19,7 +19,7 @@ const transactionSchema = new Schema(
     }
   }
 );
-
+//Posts model of the transaction schema into the mongoDB
 const Transaction = mongoose.model("Transaction", transactionSchema);
-
+//Explorts this file to be used elsewhere
 module.exports = Transaction;
